@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+<defs>
+ <radialGradient id="bg"><stop offset="0" stop-color="#535965"/><stop offset="1" stop-color="#181b21"/></radialGradient>
+ <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%"><feDropShadow dx="0" dy="14" stdDeviation="10" flood-color="#000" flood-opacity=".55"/></filter>
+ <filter id="shine"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+ <filter id="noise"><feTurbulence type="fractalNoise" baseFrequency=".75" numOctaves="4" seed="7"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="table" tableValues="0 .22"/></feComponentTransfer></filter>
+ 
+</defs>
+<ellipse cx="128" cy="220" rx="74" ry="18" fill="#000" opacity=".35"/>
+<g filter="url(#shadow)"><path d="M39 155 55 83 101 44 166 50 211 92 216 153 180 202 114 214 62 189Z" fill="url(#bg)" stroke="#7f8794" stroke-width="5"/><g opacity=".7"><circle cx="88" cy="88" r="8" fill="#d3d6da"/><circle cx="152" cy="72" r="6" fill="#222936"/><circle cx="184" cy="116" r="10" fill="#c2c5c9"/><circle cx="116" cy="156" r="8" fill="#e1e1df"/><circle cx="76" cy="166" r="6" fill="#20242c"/><circle cx="163" cy="177" r="7" fill="#a7abb2"/></g><path d="m71 107 53-41 52 11 26 47-46-22-45 20Z" fill="#fff" opacity=".13"/></g>
+</svg>

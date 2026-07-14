@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+<defs>
+ <radialGradient id="bg"><stop offset="0" stop-color="#ff34d2"/><stop offset="1" stop-color="#241057"/></radialGradient>
+ <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%"><feDropShadow dx="0" dy="14" stdDeviation="10" flood-color="#000" flood-opacity=".55"/></filter>
+ <filter id="shine"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+ <filter id="noise"><feTurbulence type="fractalNoise" baseFrequency=".75" numOctaves="4" seed="7"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="table" tableValues="0 .22"/></feComponentTransfer></filter>
+ 
+</defs>
+<ellipse cx="128" cy="220" rx="74" ry="18" fill="#000" opacity=".35"/>
+<g filter="url(#shadow)"><circle cx="128" cy="128" r="86" fill="url(#bg)" stroke="#ff8cff" stroke-width="6"/><path d="M128 42 167 75 210 91 180 129 191 176 144 174 109 211 91 169 46 151 76 114 65 69 111 75Z" fill="#fff" opacity=".18"/><circle cx="128" cy="128" r="52" fill="#fff" opacity=".18" filter="url(#shine)"/><path d="M70 121c31-34 77-52 124-12-35 2-55 13-78 44-17-14-28-22-46-32Z" fill="#50e6ff" opacity=".5"/><circle cx="103" cy="88" r="15" fill="#fff" opacity=".9" filter="url(#shine)"/></g>
+</svg>

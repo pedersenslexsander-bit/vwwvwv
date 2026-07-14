@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+<defs>
+ <radialGradient id="bg"><stop offset="0" stop-color="#ffd84d"/><stop offset="1" stop-color="#b86b00"/></radialGradient>
+ <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%"><feDropShadow dx="0" dy="14" stdDeviation="10" flood-color="#000" flood-opacity=".55"/></filter>
+ <filter id="shine"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+ <filter id="noise"><feTurbulence type="fractalNoise" baseFrequency=".75" numOctaves="4" seed="7"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="table" tableValues="0 .22"/></feComponentTransfer></filter>
+ 
+</defs>
+<ellipse cx="128" cy="220" rx="74" ry="18" fill="#000" opacity=".35"/>
+<g filter="url(#shadow)"><path d="M48 151 65 88 101 55 151 42 201 73 216 128 192 188 135 211 78 192Z" fill="url(#bg)" stroke="#ffdf67" stroke-width="6"/><path d="m76 103 36-37 45-5 34 31-38 11-29 32-45-7Z" fill="#fff5a7" opacity=".65"/><path d="m75 165 43-17 42 18-17 31-46-3Z" fill="#b87408" opacity=".45"/><circle cx="177" cy="126" r="11" fill="#fffbd1" opacity=".75" filter="url(#shine)"/></g>
+</svg>
